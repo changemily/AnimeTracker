@@ -4,10 +4,10 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
  
 // We import all the components we need in our app
-import Navbar from "./components/navbar";
-import RecordList from "./components/animeTracker";
-import Edit from "./components/edit";
-import Create from "./components/create";
+import Navbar from "./components/NavBar";
+import RecordList from "./screens/AnimeTracker";
+import Edit from "./screens/EditRecord";
+import Create from "./screens/CreateRecord";
  
 const App = () => {
  return (
