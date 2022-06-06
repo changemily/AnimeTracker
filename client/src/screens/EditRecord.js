@@ -7,7 +7,7 @@ import { useParams, useNavigate } from "react-router";
  
 export default function Edit() {
  const [form, setForm] = useState({
-   name: "",
+   dateCompleted: "",
    position: "",
    level: "",
    records: [],
@@ -51,7 +51,7 @@ export default function Edit() {
  async function onSubmit(e) {
    e.preventDefault();
    const editedPerson = {
-     name: form.name,
+    dateCompleted: form.dateCompleted,
      position: form.position,
      level: form.level,
    };
@@ -74,13 +74,13 @@ export default function Edit() {
      <h3>Update Record</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
-         <label htmlFor="name">Name: </label>
+         <label htmlFor="name">dateCompleted: </label>
          <input
            type="text"
            className="form-control"
-           id="name"
-           value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })}
+           id="dateCompleted"
+           value={form.dateCompleted}
+           onChange={(e) => updateForm({ dateCompleted: e.target.value })}
          />
        </div>
        <div className="form-group">

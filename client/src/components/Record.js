@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Record = (props) => {
   return(
     <tr>
-    <td>{props.record.name}</td>
+    <td>{props.record.dateCompleted}</td>
     <td>{props.record.position}</td>
     <td>{props.record.level}</td>
     <td>

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
  
 export default function Create() {
  const [form, setForm] = useState({
-   name: "",
+   dateCompleted: "",
    position: "",
    level: "",
  });
@@ -35,7 +35,7 @@ export default function Create() {
      return;
    });
  
-   setForm({ name: "", position: "", level: "" });
+   setForm({ dateCompleted: "", position: "", level: "" });
    navigate("/");
  }
  
@@ -45,13 +45,13 @@ export default function Create() {
      <h3>Create New Record</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
-         <label htmlFor="name">Name</label>
+         <label>dateCompleted</label>
          <input
            type="text"
            className="form-control"
-           id="name"
-           value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })}
+           id="dateCompleted"
+           value={form.dateCompleted}
+           onChange={(e) => updateForm({ dateCompleted: e.target.value })}
          />
        </div>
        <div className="form-group">
