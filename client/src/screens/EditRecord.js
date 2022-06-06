@@ -7,10 +7,11 @@ import { useParams, useNavigate } from "react-router";
  
 export default function Edit() {
  const [form, setForm] = useState({
-   dateCompleted: "",
-   position: "",
-   level: "",
-   records: [],
+  dateCompleted: "",
+  title: "",
+  megReview: "",
+  favChar: "",
+  favEp: "",
  });
  const params = useParams();
  const navigate = useNavigate();
@@ -52,8 +53,10 @@ export default function Edit() {
    e.preventDefault();
    const editedPerson = {
     dateCompleted: form.dateCompleted,
-     position: form.position,
-     level: form.level,
+    title: form.title,
+    megReview: form.megReview,
+    favChar: form.favChar,
+    favEp: form.favEp,
    };
  
    // This will send a post request to update the data in the database.
