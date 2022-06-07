@@ -15,26 +15,27 @@ export default function Navbar() {
  return (
    <div>
      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-       <NavLink className="navbar-home" to="/">
+       <NavLink className="navbar-home" to="LoginScreen/">
        <img style={{"width" : 5 + '%'}} src={require('../icons/homeIcon.png')}></img>
        </NavLink>
 
-       <NavLink className="navbar-tracker" to="/">
+       <NavLink className="navbar-tracker" to="TrackerScreen/">
        <img style={{"width" : 10 + '%'}} src={require('../icons/trackerIcon.png')}></img>
        </NavLink>
 
-       <NavLink className="navbar-watch" to="/">
+       <NavLink className="navbar-watch" to="/WatchListScreen">
        <img style={{"width" : 20 + '%'}} src={require('../icons/watchListIcon.png')}></img>
        </NavLink>
 
        <div className="collapse navbar-collapse" id="navbarSupportedContent">
          <ul className="navbar-nav ml-auto">
            <li className="nav-item">
-             <NavLink className="nav-link" to="/create">
+             <NavLink className="nav-link" to="/CreateTrackerRecordScreen">
                Create Record
              </NavLink>
            </li>
          </ul>
+         <button>Sign Out</button>
        </div>
      </nav>
    </div>

@@ -1,20 +1,11 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
 
-function CreateWatchRecordScreen() {
+function EditWatchRecordScreen() {
   return (
-    <View style={styles.screen}>
-      <Text>This is the Create Watch Record Screen!</Text>
-    </View>
+    <div>
+      <p>This is the Create Watch Record Screen!</p>
+    </div>
   );
 }
 
-const styles = StyleSheet.create({
-  screen: {
-    justifyContent: "center",
-    alignItems: "center",
-    flex: 1,
-  },
-});
-
-export default CreateWatchRecordScreen;
+export default EditWatchRecordScreen;

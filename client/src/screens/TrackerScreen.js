@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Record from "../components/Record";
-export default function RecordList() {
+export default function TrackerScreen() {
  const [records, setRecords] = useState([]);
  
  // This method fetches the records from the database.

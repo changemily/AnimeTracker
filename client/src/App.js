@@ -5,18 +5,29 @@ import { Route, Routes } from "react-router-dom";
  
 // We import all the components we need in our app
 import Navbar from "./components/NavBar";
-import RecordList from "./screens/TrackerScreen";
-import Edit from "./screens/EditTrackerRecordScreen";
-import Create from "./screens/CreateTrackerRecordScreen";
+import TrackerScreen from "./screens/TrackerScreen";
+import WatchListScreen from "./screens/WatchListScreen" 
+import EditTrackerRecordScreen from "./screens/EditTrackerRecordScreen";
+import EditWatchRecordScreen from "./screens/EditWatchRecordScreen";
+import CreateTrackerRecordScreen from "./screens/CreateTrackerRecordScreen";
+import CreateWatchRecordScreen from "./screens/CreateTrackerRecordScreen" 
+import LoginScreen from "./screens/LoginScreen";
+import SignUpScreen from "./screens/SignUpScreen";
  
 const App = () => {
  return (
    <div>
      <Navbar />
      <Routes>
-       <Route exact path="/" element={<RecordList />} />
-       <Route path="/edit/:id" element={<Edit />} />
-       <Route path="/create" element={<Create />} />
+       <Route path="/" element={<LoginScreen />} />
+       <Route path="/LoginScreen" element={<LoginScreen />} />
+       <Route path="/SignUpScreen" element={<SignUpScreen />} />
+       <Route exact path="TrackerScreen/" element={<TrackerScreen />} />
+       <Route path="/WatchListScreen" element={<WatchListScreen />} />
+       <Route path="/edit/:id" element={<EditTrackerRecordScreen />} />
+       <Route path="/EditWatchRecordScreen/:id" element={<EditWatchRecordScreen />} />
+       <Route path="/CreateTrackerRecordScreen" element={<CreateTrackerRecordScreen />} />
+       <Route path="/CreateWatchRecordScreen" element={<CreateWatchRecordScreen />} />
      </Routes>
    </div>
  );

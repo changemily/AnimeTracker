@@ -5,7 +5,7 @@ It will use a similar layout to the create component and will eventually submit 
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router";
  
-export default function Edit() {
+export default function EditTrackerRecordScreen() {
  const [form, setForm] = useState({
   dateCompleted: "",
   title: "",
