@@ -5,9 +5,9 @@ import { Route, Routes } from "react-router-dom";
  
 // We import all the components we need in our app
 import Navbar from "./components/NavBar";
-import RecordList from "./screens/AnimeTracker";
-import Edit from "./screens/EditRecord";
-import Create from "./screens/CreateTrackerRecord";
+import RecordList from "./screens/TrackerScreen";
+import Edit from "./screens/EditTrackerRecordScreen";
+import Create from "./screens/CreateTrackerRecordScreen";
  
 const App = () => {
  return (
